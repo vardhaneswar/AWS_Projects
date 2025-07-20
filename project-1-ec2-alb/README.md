@@ -57,7 +57,7 @@ This project demonstrates a simple high-availability web application setup using
   ssh -i your-key.pem ec2-user@<public-ip>
 
 
-#Inage
+#Image
 
          +---------+
          |  User   |
@@ -76,3 +76,7 @@ This project demonstrates a simple high-availability web application setup using
 | EC2     |       | EC2     |
 | http-1  |       | http-2  |
 +---------+       +---------+
+
+
+
+--
