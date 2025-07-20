@@ -55,3 +55,24 @@ This project demonstrates a simple high-availability web application setup using
 - Connected to instance using PEM key:
   ```bash
   ssh -i your-key.pem ec2-user@<public-ip>
+
+
+#Inage
+
+         +---------+
+         |  User   |
+         +----+----+
+              |
+              v
+       +--------------+
+       | Application  |
+       | Load Balancer|
+       +------+-------+
+              |
+     +--------+--------+
+     |                 |
+     v                 v
++---------+       +---------+
+| EC2     |       | EC2     |
+| http-1  |       | http-2  |
++---------+       +---------+
