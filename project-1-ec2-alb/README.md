@@ -57,26 +57,6 @@ This project demonstrates a simple high-availability web application setup using
   ssh -i your-key.pem ec2-user@<public-ip>
 
 
-#Image
+### 📊 Architecture Diagram
 
-         +---------+
-         |  User   |
-         +----+----+
-              |
-              v
-       +--------------+
-       | Application  |
-       | Load Balancer|
-       +------+-------+
-              |
-     +--------+--------+
-     |                 |
-     v                 v
-+---------+       +---------+
-| EC2     |       | EC2     |
-| http-1  |       | http-2  |
-+---------+       +---------+
-
-
-
---
+![Architecture Diagram](./ec2-alb-architecture.png)
